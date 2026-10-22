@@ -12,6 +12,12 @@
     --text-secondary: #94a3b8;
     --border-color: #334155;
     --shadow: 0 4px 6px rgba(0,0,0,0, 0.3);
+    --accent-color: #4f46e5;
+    --success-color: #10b981;
+    --danger-color: #ef4444;
+    --green-color: #1abc9c;
+    --blue-color: #3498db;
+    --orange-color: #e67e22;
 }
 
 body{
@@ -29,6 +35,20 @@ header{
     padding: 20px;
     border-bottom: 1px solid var(--border-color);
 }
+
+.logo{
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+    color: var(--accent-color);
+    margin-top: 10px;
+}
+
 section{
     width: 90%;
     max-width: 1100px;
@@ -53,10 +73,42 @@ section:first-of-type > div {
     background-color: var(--bg-card);
     flex: 1;
     padding: 1.5rem;
-    text-align: center;
-    color: white;
+    box-shadow: var(--shadow);
     border: 1px solid var(--border-color);
     border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section:first-of-type > div h5{
+    text-transform: capitalize;
+    font-weight: 300;
+    margin: 0;
+    font-size: 0.75rem;
+    color: var(--green-color);
+}
+
+section:first-of-type>div:nth-child(2) h5,
+.green {
+    color: var(--green-color);
+
+}
+
+section:first-of-type > div:nth-child(2) h5, .blue{
+    color: var(--blue-color);
+    
+}
+
+section:first-of-type>div:nth-child(3) h5, .orange {
+    color: var(--orange-color);
+
+}
+
+section:first-of-type > div p{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-secondary);
 }
 section:nth-of-type(2){
     text-align: center;
