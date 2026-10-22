@@ -11,7 +11,7 @@
     --text-primary: #f1f5f9;
     --text-secondary: #94a3b8;
     --border-color: #334155;
-    --shadow: 0 4px 6px rgba(0,0,0,0, 0.3);
+    --shadow: 0 4px 6px rgba(0,0,0,0.3);
     --accent-color: #4f46e5;
     --success-color: #10b981;
     --danger-color: #ef4444;
@@ -110,10 +110,59 @@ section:first-of-type > div p{
     font-weight: bold;
     color: var(--text-secondary);
 }
-section:nth-of-type(2){
-    text-align: center;
-    padding: 50px;
+
+section:nth-of-type(2) h2{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
 }
+
+section:nth-of-type(2) form > div{
+    margin-top: 1.5rem;
+}
+section:nth-of-type(2) form label{
+    display: block;
+    margin-bottom: 2px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+section:nth-of-type(2) form select, section:nth-of-type(2) form input{
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+section:nth-of-type(2) form select:focus,
+section:nth-of-type(2) form input:focus{
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(78,70,229,0.1);
+}
+section:nth-of-type(2) form button{
+    padding: 0.7rem 2rem;
+    border: none;
+    border-radius: 8px;
+    margin-top: 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    background: var(--accent-color);
+    color: var(--text-primary);
+    transition: all 0.3s;
+}
+
+section:nth-of-type(2) form button:hover{
+    background: var(--green-color);
+    transform: translateY(-3px);
+}
+
 section:nth-of-type(3){
     text-align: center;
     padding: 50px;
