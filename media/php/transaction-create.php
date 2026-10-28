@@ -18,7 +18,7 @@ $typeId = $_POST['typeId'];
 
 if(empty($date)){
     $message = "Veuillez entrer une date";
-}elseif(empty($amount) || is_numeric($amount)){
+}elseif(empty($amount) || is_numeric($amount) || $amount <= 0){
     $message = "Veuillez entrer un montant";
 }elseif(empty($catId)){
     $message = "Veuillez choisir une cathegorie";
